@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#onActionKeyGr1" prefWidth="1000.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.projekt.pw.gui.GameController">
+   <left>
+      <VBox fx:id="vBoxGr1" alignment="CENTER" prefHeight="533.0" prefWidth="500.0" spacing="20.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" prefHeight="50.0" prefWidth="370.0" spacing="10.0">
+               <children>
+                  <Label text="Pytanie numer: " />
+                  <Label fx:id="labelIlePytanGracz1" text="1">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="38.0" prefWidth="370.0">
+               <children>
+                  <Label fx:id="nazwaGr1" text="Gracz 1" textFill="#576100">
+                     <font>
+                        <Font size="48.0" />
+                     </font></Label>
+               </children>
+            </HBox>
+            <Pane prefHeight="80.0" prefWidth="370.0">
+               <children>
+                  <Label fx:id="labelDobraOdpGr1" layoutX="139.0" layoutY="-3.0" text="Dobra odpowiedź !" textFill="#11d36f">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="labelZlaOdpGr1" layoutX="147.0" layoutY="-3.0" prefHeight="33.0" prefWidth="170.0" text="Zła odpowiedź !" textFill="#f20909">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="labelCzasGr1" alignment="CENTER" contentDisplay="CENTER" layoutX="229.0" layoutY="37.0" text="czas" textFill="#2706a7" />
+               </children>
+            </Pane>
+            <HBox alignment="CENTER" prefHeight="100.0" spacing="10.0">
+               <children>
+                  <Label fx:id="labelPytanieGracz1" alignment="CENTER" prefHeight="85.0" prefWidth="373.0" text="Tu pojawi się pytanie" wrapText="true">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding></Label>
+               </children>
+            </HBox>
+            <VBox prefHeight="200.0" prefWidth="500.0">
+               <children>
+                  <Label fx:id="labelAGr1" alignment="CENTER" prefHeight="50.0" prefWidth="500.0" text="odpA" wrapText="true">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="labelBGr1" alignment="CENTER" prefHeight="50.0" prefWidth="500.0" text="odpB" wrapText="true">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="labelCGr1" alignment="CENTER" prefHeight="50.0" prefWidth="500.0" text="odpC" wrapText="true">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="labelDGr1" alignment="CENTER" prefHeight="50.0" prefWidth="500.0" text="odpD" wrapText="true">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </VBox>
+            <HBox alignment="CENTER" prefHeight="100.0" spacing="5.0">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="90.0" prefWidth="120.0" text="A" textFill="#171717" />
+                  <Button mnemonicParsing="false" prefHeight="90.0" prefWidth="120.0" text="B" />
+                  <Button mnemonicParsing="false" prefHeight="90.0" prefWidth="120.0" text="C" />
+                  <Button mnemonicParsing="false" prefHeight="90.0" prefWidth="120.0" text="D" />
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </VBox>
+   </left>
+   <right>
+      <VBox fx:id="vBoxGr2" alignment="CENTER" prefHeight="533.0" prefWidth="500.0" spacing="20.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" prefHeight="50.0" spacing="10.0">
+               <children>
+                  <Label text="Pytanie numer: " />
+                  <Label fx:id="labelIlePytanGracz2" text="1">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="38.0">
+               <children>
+                  <Label fx:id="nazwaGr2" text="Gracz 2" textFill="#576100">
+                     <font>
+                        <Font size="48.0" />
+                     </font></Label>
+               </children>
+            </HBox>
+            <Pane prefHeight="80.0" prefWidth="200.0">
+               <children>
+                  <Label fx:id="labelZlaOdpGr2" layoutX="149.0" layoutY="-3.0" text="Zła odpowiedź !" textFill="#f20909">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="labelDobraOdpGr2" layoutX="139.0" layoutY="-3.0" text="Dobra odpowiedź !" textFill="#11d36f">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="labelCzasGr2" alignment="CENTER" contentDisplay="CENTER" layoutX="222.0" layoutY="37.0" text="czas" textFill="#2706a7" />
+               </children>
+            </Pane>
+            <HBox alignment="CENTER" prefHeight="100.0" spacing="10.0">
+               <children>
+                  <Label fx:id="labelPytanieGracz2" alignment="CENTER" prefHeight="85.0" prefWidth="371.0" text="Tu pojawi się pytanie" wrapText="true">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding></Label>
+               </children>
+            </HBox>
+            <VBox prefHeight="200.0" prefWidth="500.0">
+               <children>
+                  <Label fx:id="labelAGr2" alignment="CENTER" prefHeight="50.0" prefWidth="500.0" text="odpA" wrapText="true">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="labelBGr2" alignment="CENTER" prefHeight="50.0" prefWidth="500.0" text="odpB" wrapText="true">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="labelCGr2" alignment="CENTER" prefHeight="50.0" prefWidth="500.0" text="odpC" wrapText="true">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="labelDGr2" alignment="CENTER" prefHeight="50.0" prefWidth="500.0" text="odpD" wrapText="true">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </VBox>
+            <HBox alignment="CENTER" prefHeight="100.0" spacing="5.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#onActionButtonAGr2" prefHeight="90.0" prefWidth="120.0" text="A" />
+                  <Button mnemonicParsing="false" onAction="#onActionButtonBGr2" prefHeight="90.0" prefWidth="120.0" text="B" />
+                  <Button mnemonicParsing="false" onAction="#onActionButtonCGr2" prefHeight="90.0" prefWidth="120.0" text="C" />
+                  <Button mnemonicParsing="false" onAction="#onActionButtonDGr2" prefHeight="90.0" prefWidth="120.0" text="D" />
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </VBox>
+   </right>
+   <center>
+      <Separator orientation="VERTICAL" prefHeight="533.0" prefWidth="0.0" BorderPane.alignment="CENTER" />
+   </center>
+   <top>
+      <HBox alignment="CENTER" prefHeight="58.0" prefWidth="786.0" spacing="50.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="buttonStart" mnemonicParsing="false" onAction="#onActionStart" prefHeight="25.0" prefWidth="150.0" text="Start" />
+            <Label fx:id="labelSumaPunktow" text="Wspólnie zdobyte punkty: 0.0" textFill="#073207">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button mnemonicParsing="false" onMouseClicked="#onMouseClickedFinishGame" prefWidth="150.0" text="Koniec Gry" />
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <padding>
+            <Insets top="10.0" />
+         </padding>
+      </HBox>
+   </top>
+</BorderPane>

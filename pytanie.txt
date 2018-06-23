@@ -1,0 +1,9 @@
+create table pytanie(
+id_pytania numeric(4) not null primary key
+,tresc_pytania varchar(500) not null
+,odpowiedz_a varchar(200) not null
+,odpowiedz_b varchar(200) not null
+,odpowiedz_c varchar(200) not null
+,odpowiedz_d varchar(200) not null
+,prawidlowa varchar(10) not null
+)
